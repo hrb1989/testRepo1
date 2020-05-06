@@ -1,0 +1,11 @@
+---
+- hosts: localhost 
+  gather_facts: no
+  become: yes
+  become_user: tomcat
+
+  tasks:
+    - name: testing 1
+      shell: echo export JAVA_HOME=/opt/vFabric/java/jdk1.8.0_231 >> ~/.bashrc
+    - name: testing 2
+      shell: "source ~/.bashrc"

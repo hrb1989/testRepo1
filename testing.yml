@@ -1,0 +1,11 @@
+---
+- name: play1
+  hosts: localhost
+  tasks:
+  - name: create user1
+    user:
+      name: user1
+
+  - name: create user2
+    user:
+      name: user2
